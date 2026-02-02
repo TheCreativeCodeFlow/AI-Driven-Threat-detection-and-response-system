@@ -1,0 +1,27 @@
+/* Page Styles */
+.threats-page,
+.analytics-page,
+.ai-decisions-page,
+.ip-management-page,
+.accounts-page,
+.logs-page,
+.settings-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.page-header {
+    margin-bottom: var(--space-md);
+}
+
+.page-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+}
+
+.page-header p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}

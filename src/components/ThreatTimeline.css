@@ -1,0 +1,161 @@
+/* Threat Timeline Styles */
+.threat-timeline {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.timeline-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.timeline-container {
+    padding: var(--space-lg);
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.timeline-event {
+    display: flex;
+    gap: var(--space-md);
+    animation: slideIn 0.3s ease-out backwards;
+}
+
+.timeline-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32px;
+    flex-shrink: 0;
+}
+
+.timeline-dot {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.timeline-dot.detection {
+    background: rgba(255, 71, 87, 0.15);
+    color: var(--critical);
+    border: 2px solid var(--critical);
+}
+
+.timeline-dot.escalation {
+    background: rgba(255, 107, 53, 0.15);
+    color: var(--high);
+    border: 2px solid var(--high);
+}
+
+.timeline-dot.action {
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+
+.timeline-dot.resolution {
+    background: rgba(0, 217, 165, 0.15);
+    color: var(--success);
+    border: 2px solid var(--success);
+}
+
+.timeline-connector {
+    width: 2px;
+    flex: 1;
+    min-height: 40px;
+    background: linear-gradient(to bottom, var(--border-color), transparent);
+    margin: var(--space-xs) 0;
+}
+
+.event-content {
+    flex: 1;
+    padding-bottom: var(--space-lg);
+}
+
+.event-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-xs);
+}
+
+.event-type {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.event-type.detection {
+    color: var(--critical);
+}
+
+.event-type.escalation {
+    color: var(--high);
+}
+
+.event-type.action {
+    color: var(--accent);
+}
+
+.event-type.resolution {
+    color: var(--success);
+}
+
+.event-time {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.event-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+}
+
+.event-description {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    margin-bottom: var(--space-sm);
+}
+
+.threat-link {
+    font-size: 0.7rem;
+    color: var(--accent);
+    cursor: pointer;
+}
+
+.threat-link:hover {
+    text-decoration: underline;
+}
+
+/* Severity border accents */
+.timeline-event.critical .event-content {
+    border-left: 2px solid transparent;
+    border-image: linear-gradient(to bottom, var(--critical), transparent) 1;
+    padding-left: var(--space-md);
+    margin-left: calc(-1 * var(--space-md));
+}
+
+.timeline-event.high .event-content {
+    border-left: 2px solid transparent;
+    border-image: linear-gradient(to bottom, var(--high), transparent) 1;
+    padding-left: var(--space-md);
+    margin-left: calc(-1 * var(--space-md));
+}

@@ -1,0 +1,84 @@
+/* Analytics Charts Styles */
+.analytics-charts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.chart-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.chart-card:hover {
+    border-color: var(--border-glow);
+    box-shadow: var(--shadow-md);
+}
+
+.chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.chart-header h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.chart-badge {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+}
+
+.chart-badge.critical {
+    background: rgba(255, 71, 87, 0.15);
+    color: var(--critical);
+}
+
+.chart-badge.high {
+    background: rgba(255, 107, 53, 0.15);
+    color: var(--high);
+}
+
+.chart-badge.medium {
+    background: rgba(255, 193, 7, 0.15);
+    color: var(--medium);
+}
+
+.chart-body {
+    padding: var(--space-md);
+}
+
+.chart-body.pie-chart {
+    padding-right: 0;
+}
+
+/* Recharts custom styling */
+.recharts-default-tooltip {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-md) !important;
+}
+
+.recharts-tooltip-label {
+    color: var(--text-primary) !important;
+}
+
+.recharts-legend-item-text {
+    color: var(--text-secondary) !important;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .analytics-charts {
+        grid-template-columns: 1fr;
+    }
+}
