@@ -9,7 +9,7 @@
 .ai-header {
     padding: var(--space-lg);
     border-bottom: 1px solid var(--border-color);
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.05));
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.08), rgba(123, 97, 255, 0.04));
 }
 
 .ai-title {
@@ -68,7 +68,7 @@
     width: 40px;
     height: 40px;
     border-radius: var(--radius-md);
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(0, 212, 255, 0.15);
     color: var(--accent);
     display: flex;
     align-items: center;
@@ -141,7 +141,7 @@
 }
 
 .confidence-badge.high {
-    background: rgba(0, 217, 165, 0.15);
+    background: rgba(0, 255, 136, 0.15);
     color: var(--success);
 }
 
@@ -186,8 +186,8 @@
 }
 
 .explanation-box {
-    background: rgba(99, 102, 241, 0.08);
-    border: 1px solid rgba(99, 102, 241, 0.2);
+    background: rgba(0, 212, 255, 0.06);
+    border: 1px solid rgba(0, 212, 255, 0.2);
     border-radius: var(--radius-md);
     padding: var(--space-md);
     margin-bottom: var(--space-md);

@@ -63,13 +63,13 @@
 }
 
 .timeline-dot.action {
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(0, 212, 255, 0.15);
     color: var(--accent);
     border: 2px solid var(--accent);
 }
 
 .timeline-dot.resolution {
-    background: rgba(0, 217, 165, 0.15);
+    background: rgba(0, 255, 136, 0.15);
     color: var(--success);
     border: 2px solid var(--success);
 }

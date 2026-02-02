@@ -136,7 +136,7 @@
 }
 
 .type-badge.auto {
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(0, 212, 255, 0.15);
     color: var(--accent);
 }
 

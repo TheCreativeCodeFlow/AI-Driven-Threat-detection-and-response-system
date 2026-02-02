@@ -97,7 +97,7 @@
 }
 
 .nav-item.active {
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(0, 212, 255, 0.12);
     color: var(--accent);
     border-left: 3px solid var(--accent);
 }
@@ -126,7 +126,7 @@
     width: 40px;
     height: 40px;
     border-radius: var(--radius-full);
-    background: linear-gradient(135deg, var(--accent), #8b5cf6);
+    background: linear-gradient(135deg, #00d4ff, #7b61ff);
     display: flex;
     align-items: center;
     justify-content: center;
